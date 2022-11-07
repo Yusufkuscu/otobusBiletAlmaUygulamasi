@@ -90,7 +90,7 @@ public:
 };
 
 
-class Kullanýcý {
+class Kullanici {
 private:
 	int toplamBiletSayisi;
 
@@ -98,7 +98,7 @@ public:
 	int biletSayisi;
 	string* bilet;
 
-	Kullanýcý(int toplamBiletSayisi) {
+	Kullanici(int toplamBiletSayisi) {
 		this->toplamBiletSayisi = toplamBiletSayisi;
 		biletSayisi = 0;
 		bilet = new string[toplamBiletSayisi];
@@ -173,7 +173,7 @@ int main() {
 
 
 	int kapasite = 5;
-	Kullanýcý kullanýcý(kapasite);
+	Kullanici kullanýcý(kapasite);
 	cout << endl;
 	cout << "Bilet Durumlarý " << endl;
 	kullanýcý.biletRezerveEt(1, "DOLU");
