@@ -173,13 +173,13 @@ int main() {
 
 
 	int kapasite = 5;
-	Kullanici kullanýcý(kapasite);
+	Kullanici kullanici(kapasite);
 	cout << endl;
 	cout << "Bilet Durumlarý " << endl;
-	kullanýcý.biletRezerveEt(1, "DOLU");
+	kullanici.biletRezerveEt(1, "DOLU");
 
-	kullanýcý.biletListele();
-	kullanýcý.koltukSay();
+	kullanici.biletListele();
+	kullanici.koltukSay();
 
 	cout << endl;
 	int koltukSec;
@@ -189,7 +189,7 @@ int main() {
 	cout << "Ýsim Giriniz: ";
 	cin >> isimGir;
 
-	kullanýcý.biletRezerveEt(koltukSec, isimGir);
+	kullanici.biletRezerveEt(koltukSec, isimGir);
 
 	cout << endl << endl;
 
